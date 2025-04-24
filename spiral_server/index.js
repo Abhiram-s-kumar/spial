@@ -8,7 +8,7 @@ const Contact = require("./models/Contacct");
 const app = express();
 app.use(cors(
 
-  origin:["https://spialfrontend.vercel.app/"],
+  origin:["https://spialfrontend.vercel.app"],
   methods:["POST","GET"],
   credentials:true
   
