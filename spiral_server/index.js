@@ -6,7 +6,14 @@ const cors = require("cors");
 const Contact = require("./models/Contacct");
 
 const app = express();
-app.use(cors());
+app.use(cors(
+
+  origin:["https://spialfrontend.vercel.app/"],
+  methods:["POST","GET"],
+  credentials:true
+  
+   
+));
 app.use(express.static('public'));
 
 
