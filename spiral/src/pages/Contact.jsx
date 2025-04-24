@@ -15,7 +15,7 @@ const Contact = () => {
     email: '',
     number: '',
   });
-
+ axios.defaults.withCredentials = true;
   const [downloadComplete, setDownloadComplete] = useState(false); // New state to track download completion
   const history = useNavigate(); // Hook for programmatic navigation
 
