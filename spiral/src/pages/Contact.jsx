@@ -62,7 +62,7 @@ const Contact = () => {
   
     try {
       // Save the contact info to MongoDB
-      await axios.post('http://localhost:3001/api/contact', form);
+      await axios.post('https://spial-api.vercel.app/contact', form);
   
       // Trigger the download of the PDF
       window.location.href = 'http://localhost:3001/brochure.pdf'; // Use the full URL to avoid React Router conflict
